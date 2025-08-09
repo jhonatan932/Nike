@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Tenis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f44336;
+    }
+
+    .container {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px;
+    }
+
+    .product-info p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .price {
+      color: #e53935;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    .buy-btn {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #e53935;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔥 Tienda de Tenis Urbanos</h1>
+    <p>Explora nuestra colección completa</p>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- Catálogo de productos -->
+  <section class="container">
+
+    <!-- Producto 1 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1606813909227-6131b74b5e45?auto=format&fit=crop&w=800&q=80" alt="Nike Air Max">
+      <div class="product-info">
+        <h3>Nike Air Max 270</h3>
+        <p>Tenis con máxima amortiguación, ideales para el día a día.</p>
+        <div class="price">$120 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1582213782179-8d3a26f50688?auto=format&fit=crop&w=800&q=80" alt="Adidas Ultraboost">
+      <div class="product-info">
+        <h3>Adidas Ultraboost 21</h3>
+        <p>Diseñados para correr con energía y comodidad.</p>
+        <div class="price">$140 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1596462502278-df1bcb5cbbcc?auto=format&fit=crop&w=800&q=80" alt="Puma Rider">
+      <div class="product-info">
+        <h3>Puma Rider Future</h3>
+        <p>Retro estilo urbano con diseño moderno y ligero.</p>
+        <div class="price">$95 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1622737131357-e18660c8bcbc?auto=format&fit=crop&w=800&q=80" alt="Vans Old Skool">
+      <div class="product-info">
+        <h3>Vans Old Skool</h3>
+        <p>Clásico atemporal con suela waffle y diseño en lona.</p>
+        <div class="price">$75 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1593032457865-b5adfbf2a582?auto=format&fit=crop&w=800&q=80" alt="Converse Chuck Taylor">
+      <div class="product-info">
+        <h3>Converse Chuck Taylor</h3>
+        <p>Tenis clásicos de lona para un look urbano y fresco.</p>
+        <div class="price">$60 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1622779929533-36cc213ed192?auto=format&fit=crop&w=800&q=80" alt="New Balance 574">
+      <div class="product-info">
+        <h3>New Balance 574</h3>
+        <p>Comodidad y estilo retro para todos los días.</p>
+        <div class="price">$85 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1646324988820-616db9a4170a?auto=format&fit=crop&w=800&q=80" alt="Reebok Classic">
+      <div class="product-info">
+        <h3>Reebok Classic</h3>
+        <p>Estilo clásico con materiales resistentes y confortables.</p>
+        <div class="price">$70 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1614707267537-c04fbaef6b20?auto=format&fit=crop&w=800&q=80" alt="Jordan 1">
+      <div class="product-info">
+        <h3>Air Jordan 1</h3>
+        <p>Ícono de la cultura sneaker, disponible en varias ediciones.</p>
+        <div class="price">$150 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Producto 9 -->
+    <div class="product-card">
+      <img class="product-image" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Yeezy Boost">
+      <div class="product-info">
+        <h3>Yeezy Boost 350</h3>
+        <p>Tenis exclusivos con diseño futurista y alta demanda.</p>
+        <div class="price">$220 USD</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </
